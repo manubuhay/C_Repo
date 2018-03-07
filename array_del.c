@@ -8,17 +8,16 @@ void deleteArray(int *a, int del);
 void main(void)
 {
 int a[MAX], del;
-inputArray(a);
-
-del = delete();
+inputArray(a); //Input values into the array
+del = delete(); //Asks for the index to delete
 printf("The current list is:\n");
-outputArray(a);
+outputArray(a); //Outputs the contents of the array
 printf("You wanted to remove the value in index number %d\n", del);
 printf("Deleting.....\n");
-deleteArray(a,del);
-MAX = MAX--;
+deleteArray(a,del); //Deletes the value and shift the cells up
+MAX = MAX--; //Decrement MAX variable after deletion
 printf("The new list is:\n");
-outputArray(a);
+outputArray(a); //Outputs the updated contents of the array
 }
 
 	int delete()
