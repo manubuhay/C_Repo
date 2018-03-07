@@ -1,6 +1,7 @@
 #include <stdio.h>
 int MAX = 10; //Defines the array length
 
+int delete();
 void inputArray(int *a);
 void outputArray(int *a);
 void deleteArray(int *a, int del);
