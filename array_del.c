@@ -14,7 +14,7 @@ del = delete();
 printf("The current list is:\n");
 outputArray(a);
 printf("You wanted to remove the value in index number %d\n", del);
-printf("Deleting chosen index value....\n");
+printf("Deleting.....\n");
 deleteArray(a,del);
 MAX = MAX--;
 printf("The new list is:\n");
