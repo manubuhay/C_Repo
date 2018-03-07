@@ -1,37 +1,52 @@
 #include <stdio.h>
+int MAX = 10;
+
+void inputArray(int *a);
+void outputArray(int *a);
+void deleteArray(int *a, int del);
 
 void main(void)
 {
+int a[MAX], del;
+inputArray(a);
 
-int a[20], i,del;
-printf("Input number:\n");
-for(i=0; i<10; i++)
-	{
-		scanf("%d", &a[i]);
-	}
 del = delete();
 printf("The current list is:\n");
-for(i = 0; i<10; i++)
-	{
-		printf("%d\n", a[i]);
-	}
+outputArray(a);
 printf("You wanted to remove the value in index number %d\n", del);
-// printf("%d", a[0+1]);
-for(i = del - 1; i < 10; i++)
- 	{
- 	a[i] = a[i+1];
- 	}
+printf("Deleting chosen index value....\n");
+deleteArray(a,del);
+MAX = MAX--;
 printf("The new list is:\n");
- for(i = 0; i<10; i++)
-	{
-		printf("%d\n", a[i]);
-	}
+outputArray(a);
 }
 
-int delete()
-{
-int i;
-printf("Which index do you want to delete?\n");
-scanf("%d", &i);
-return i;
-} 
+	int delete()
+	{
+	int i;
+	printf("Which index do you want to delete?\n");
+	scanf("%d", &i);
+	return i;
+	}
+
+	void inputArray(int *a)
+	{
+		int i;
+		printf("Input number:\n");
+		for(i=0; i<MAX; i++)
+			scanf("%d", &a[i]);
+	}
+
+	void outputArray(int *a)
+	{
+		int x;
+		for(x=0; x<MAX; x++)
+			printf("%d\n", a[x]);
+	}
+
+	void deleteArray(int *a, int del)
+	{
+		int y;
+		for(y = del - 1; y<MAX; y++)
+		 	a[y] = a[y+1];
+	}
