@@ -47,6 +47,6 @@ outputArray(a); //Outputs the updated contents of the array
 	void deleteArray(int *a, int del)
 	{
 		int y;
-		for(y = del - 1; y<MAX; y++)
+		for(y=del-1; y<MAX; y++)
 		 	a[y] = a[y+1];
 	}
