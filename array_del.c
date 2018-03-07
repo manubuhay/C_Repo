@@ -1,5 +1,5 @@
 #include <stdio.h>
-int MAX = 10;
+int MAX = 10; //Defines the array length
 
 void inputArray(int *a);
 void outputArray(int *a);
