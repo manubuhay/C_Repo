@@ -16,7 +16,6 @@ outputArray(a); //Outputs the contents of the array
 printf("You wanted to remove the value in index number %d\n", del);
 printf("Deleting.....\n");
 deleteArray(a,del); //Deletes the value and shift the cells up
-MAX = MAX--; //Decrement MAX variable after deletion
 printf("The new list is:\n");
 outputArray(a); //Outputs the updated contents of the array
 }
@@ -49,4 +48,5 @@ outputArray(a); //Outputs the updated contents of the array
 		int y;
 		for(y=del-1; y<MAX; y++)
 		 	a[y] = a[y+1];
+		MAX = MAX--; //Decrement MAX variable after deletion
 	}
