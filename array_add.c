@@ -47,9 +47,9 @@ outputArray(a);
 	void addArray(int *a, int index, int val)
 	{
 		int x;
-		for(x=MAX; x>index; x--)
+		for(x=MAX; x>=index; x--)
 			a[x]=a[x-1];
-		a[x-1] = val;
+		a[x] = val;
 		MAX = MAX+1;
 	}
 
