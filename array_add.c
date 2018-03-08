@@ -15,7 +15,7 @@ printf("Current list is:\n");
 outputArray(a);
 index=addIndex();
 printf("Input value to be added:\n");
-scanf("%d\n", &val);
+scanf("%d", &val);
 addArray(a,index,val);
 printf("New list is:\n");
 outputArray(a);
@@ -26,7 +26,7 @@ outputArray(a);
 		int j;
 		printf("Input numbers:\n");
 		for(j=0; j<MAX; j++)
-			scanf("%d\n", &a[j]);
+			scanf("%d", &a[j]);
 	}
 
 	void outputArray(int *a)
@@ -40,15 +40,19 @@ outputArray(a);
 	{
 		int index;
 		printf("Where do you want to add the value?\n");
-		scanf("%d\n", &index);
+		scanf("%d", &index);
 		return index;
 	}
 
 	void addArray(int *a, int index, int val)
 	{
 		int x;
-		for(x=MAX-1; x>index-1; x--)
-			a[x+1]=a[x];
-		MAX = MAX++;
-		a[x] = val;
+		for(x=MAX; x>index; x--)
+			a[x]=a[x-1];
+		a[x-1] = val;
+		MAX = MAX+1;
 	}
+
+	/*
+NOTE: Do not add new line flags "\n" to scanf parameters e.g. %d, %c etc.
+	*/
