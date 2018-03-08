@@ -10,15 +10,15 @@ void addArray(int *a,int index,int val);
 void main(void)
 {
 int a[MAX],index,val;
-arrayInput(a);
+arrayInput(a); //Input values into the array
 printf("Current list is:\n");
-outputArray(a);
-index=addIndex();
+outputArray(a); //Output current values
+index=addIndex(); //Ask for index to where value will be put into
 printf("Input value to be added:\n");
-scanf("%d", &val);
-addArray(a,index,val);
-printf("New list is:\n");
-outputArray(a);
+scanf("%d", &val); //Inputs new value to be added into the array
+addArray(a,index,val); // Takes the array and index, shift the array cells down to add the new value to the specified index
+printf("New list is:\n"); 
+outputArray(a); // Outputs the new list
 }
 
 	void arrayInput(int *a)
