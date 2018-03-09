@@ -35,8 +35,8 @@ outputArray(x); //Print sorted values
 	void sortArray(int *x)
 	{
 		int i, j, temp;
-		for(i=MAX-1;i>=0;i--) //Loop within a loop for value comparison per run		
-			for(j=i-1;j>=0;j--)			
+		for(i = MAX-1; i >= 0; i--) //Loop within a loop for value comparison per run		
+			for(j = i-1; j >= 0; j--)			
 				if(x[i] < x[j])
 				{
 					temp = x[i]; //Swap operation
