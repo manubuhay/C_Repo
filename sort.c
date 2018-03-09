@@ -9,12 +9,12 @@ void sortArray(int *x);
 void main(void)
 {
 int x[MAX];
-inputArray(x);
+inputArray(x); //Input values
 printf("Current list:\n");
-outputArray(x);
-sortArray(x);
+outputArray(x); //Print current values
+sortArray(x); //Sort the values
 printf("Sorted list:\n");
-outputArray(x);
+outputArray(x); //Print sorted values
 }
 
 	void inputArray(int *x)
@@ -35,11 +35,11 @@ outputArray(x);
 	void sortArray(int *x)
 	{
 		int i, j, temp;
-		for(i=MAX-1;i>=0;i--)		
+		for(i=MAX-1;i>=0;i--) //Loop within a loop for value comparison per run		
 			for(j=i-1;j>=0;j--)			
 				if(x[i] < x[j])
 				{
-					temp = x[i];
+					temp = x[i]; //Swap operation
 					x[i] = x[j];
 					x[j] = temp;
 				}	
