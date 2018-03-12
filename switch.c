@@ -19,7 +19,7 @@ int main(void)
     printf("\t3 = multiply\n");
     printf("\t4 = divide\n");
 
-    printf("\n\nPleas make your selection now:\n\t");
+    printf("\n\nPlease make your selection now:\n\t");
     scanf("%d",&menu);                   /* READ calculation type */
 
     switch (menu)                  /* select the type of calculation */
