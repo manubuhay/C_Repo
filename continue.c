@@ -5,20 +5,20 @@
 
 // Consider the following program that finds the sum of five positive integers. If a negative number is entered, the sum is not performed since the remaining part of the loop is skipped using continue statement.
 
-#include < stdio.h >                         //Include stdio.h file 
-void main()                                  //start of the program 
+#include <stdio.h>                         //Include stdio.h file 
+void main()                                //start of the program 
 { 
-int I=1, num, sum=0;                         // declare and initialize the variables 
-for (I = 0; I < 5; I++)                      // for loop 
+int i, num, sum=0;                         // declare and initialize the variables 
+for (i = 0; i < 5; i++)                    // for loop 
 { 
 printf("Enter the integer");                 //Message to the user 
-scanf("%I", &num);                            //read and store the number 
-if(num < 0)                                   //check whether the number is less than zero 
-{ 
-printf("You have entered a negative number"); // message to the user 
-continue;                                     // starts with the beginning of the loop 
-}                                             // end of for loop 
-sum+=num;                                     // add and store sum to num 
+scanf("%d", &num);                           //read and store the number 
+  if(num < 0)                                //check whether the number is less than zero 
+    { 
+      printf("You have entered a negative number"); // message to the user 
+      continue;                                     // starts with the beginning of the loop 
+    }                                             	// end of for loop 
+sum+=num;                                     		// add and store sum to num 
 } 
 printf("The sum of positive numbers entered = %d",sum); // print thte sum. 
-} 
+}
