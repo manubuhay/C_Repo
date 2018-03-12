@@ -39,7 +39,7 @@ int main(void)
     default: printf("Invalid option selected\n");
     }
 
-    if (menu == 3 && numb2 == 0)            /* cannot divide by 0 */
+    if (menu == 4 && numb2 == 0)            /* cannot divide by 0 */
         printf("\n\n\tYou cannot divide by 0\n\n");
 
               /* display result to 2 decimal places */
@@ -48,5 +48,4 @@ int main(void)
     printf("\n\n*************************\n\n");
 
     return 0;
-
 }
