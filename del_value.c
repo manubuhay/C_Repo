@@ -25,7 +25,7 @@ int main(void)
         total--; //decrement total everytime the cells are shifted up
       }
       else
-      i++;
+      i++; //traverse the array if value is not found on an index
     }
 
       printf("Values are:\n");
