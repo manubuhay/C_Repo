@@ -14,15 +14,15 @@ int main(void)
     for(i = 0; i < total; i++) //input the numbers
       scanf("%d",&a[i]);
 
-    printf("Input value to delete:\n");
+    printf("Input value to delete:\n"); //input which value you want to delete
     scanf("%d", &del);
     for(i = 0; i < total;) //loop to traverse array
     {
       if(a[i] == del) //compare values
       {
         for(j = i; j < total; j++)
-          a[j] = a[j+1];
-        total--;
+          a[j] = a[j+1]; //shift cells up
+        total--; //decrement total everytime the cells are shifted up
       }
       else
       i++;
