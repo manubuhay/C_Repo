@@ -1,10 +1,10 @@
 #include <stdio.h>
 int MAX = 50; //globally define array of 50 integers
 
-int main(void) 
+int main(void)
 {
   int i,j,a[MAX],total,del;
-  
+
   printf("How many numbers?\n"); //how many values you want to input
   scanf("%d",&total);
 
