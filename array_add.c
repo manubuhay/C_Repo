@@ -47,7 +47,7 @@ outputArray(a); //Outputs the new list
 	void addArray(int *a, int index, int val)
 	{
 		int x;
-		for(x=MAX-1; x>=index; x--)
+		for(x=MAX; x>=index; x--)
 			a[x]=a[x-1];
 		a[x] = val;
 		MAX = MAX+1;
